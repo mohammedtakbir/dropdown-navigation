@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 50px;
+}
+nav > ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0 10px;
+    
+    transition: .3s;
+}
+nav ul li a{
+    color: #000;
+    font-size: 1.25rem;
+    transition: .3s;
+    padding: 5px 10px;
+    display: inline-block;
+}
+nav ul li:hover{
+    background-color: lightblue;
+    color: #fff;
+}
+nav ul li:hover a{
+    color: #fff;
+}
+.dropdown{
+    display: none;
+    background-color: #ddd;
+    position: absolute;
+}
+nav > ul > li:hover > .dropdown{
+    display: block;
+}
+ul.dropdown li{
+    margin: 0;
+}
+ul.dropdown li a{
+    padding: 5px 20px;
+}
+ul.dropdown2{
+	left: 88px;
+	top: 66px;
+    display: none;
+}
+nav ul li.dropdown2-li:hover > .dropdown2{
+    display: block;
+}

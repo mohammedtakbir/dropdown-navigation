@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-image: url(../imgs/horizontal_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: rgba(173, 216, 230, 0.961);
+    text-align: center;
+}
+.menu-bar > ul{
+    display: flex;
+    justify-content: center;
+}
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+    transition: .3s;
+}
+.menu-bar ul li a{
+    color: #000;
+    transition: .3s;
+}
+.active, .menu-bar ul li:hover{
+    background-color: rgb(50, 151, 185);
+    border-radius: 3px;
+}
+.menu-bar ul li:hover > a{
+    color: #fff;
+}
+.menu-bar ul li.active a{
+    color: #fff;
+}
+.menu-bar .fa-solid, .fa-brands{
+    margin-right: 5px;
+}
+.sub-menu-1{
+    position: absolute;
+    display: none;
+    background-color: rgba(173, 216, 230, 0.961);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1{
+    display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    margin: 10px;
+}
+/* .sub-menu-1 ul{
+    margin: 10px;
+} */
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background-color: transparent;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.sub-menu-1 ul li i{
+    text-align: right;
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover > .sub-menu-2 {
+	display: block;
+	position: absolute;
+	background-color: lightcoral;
+	margin-top: -40px;
+	margin-left: 140px;
+}
